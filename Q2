@@ -1,10 +1,8 @@
 #Q2
-for rows in range(5):
-    for columns in range(5):
-        if (rows == 0 or rows == 5-1 or columns == 0 or columns == 5-1):
-            print("*" , end="  ")
+dict ={'sweet1': '1400','sweet2':'2800','sweet3':'700'}
+print(dict)
 
-        else:
-            print(" ", end="  ")
-
-    print()
+amout =eval(input("Enter the amount in dollar : $$"))
+for key ,values in dict.items():
+    if  int(values) < amout:
+        print (key ,"is $$",values)
