@@ -1,0 +1,14 @@
+def teams():
+   no_team =int(input("Enter the no of teams: "))
+   dict={}
+   for team in range(no_team):
+       key = input("Enter the team name: ")
+       value =[]
+       wins = int(input("Enter the times team win: "))
+       losses = int(input("Enter the times team losses: "))
+       value.extend((wins,losses))
+       dict.update({key:value})
+       
+   return dict
+
+print(teams())
