@@ -1,0 +1,17 @@
+matrix= [0,2,4,8,0,
+           a,j,7,3,50,
+           fj,07,34,f,39,
+           45,k,098,p,3,
+           7,w,59,i,54]
+
+def creat_list():
+    dict={}
+    for num in range(len(matrix)):
+        key = matrix[num]
+        value = matrix.count(key)
+        dict.update({key:value})
+    return dict
+
+
+
+print(creat-list())
