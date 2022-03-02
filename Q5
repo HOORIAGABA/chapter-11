@@ -1,0 +1,22 @@
+def team_win():
+    no_of_teams = int(input("Enter the number of teams : "))
+    dict={}
+    list =[]
+    winning =[]
+    percentage_score = 0
+    for team in range(no_of_teams):
+        team_name = input("Enter the team name : ")
+        team_winning = int(input("The games team win : "))
+        dict.update({team_name:team_winning})
+        list.append(team_winning)
+        winning.append(team_name)
+
+    userinput = input("Enter the name of team to check % of wins: ")
+    for  keys,values in dict.items():
+
+         if userinput == keys:
+            score = dict[keys]
+            percentage_score = (score/100)* 100
+
+    return "Your teams list is {},winning percentage of team {}%, All team with winning record  {}".format(dict,percentage_score,winning)
+print(team_win())
