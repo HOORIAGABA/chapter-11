@@ -1,0 +1,10 @@
+dict ={"Henry":"1234","Tara":"5778","Max":"e788","Robin":"90234","Tooba":"5678778","Maxwell":"esuf74788","Henrry":"12sfgh34","Jack":"577fhjjk8","Maax":"667hfhhe788","jackson":"57yuu78"}
+def Pass(a,b):
+    for keys ,values in dict.items():
+        if keys == a  and b == dict[keys]:
+            return ("succesfully log in",keys,dict[keys])
+        else:
+            return  ("check login details")
+a = input("Enter Username: ")    
+b = input("Enter Your Password ")
+print(Pass(a,b))

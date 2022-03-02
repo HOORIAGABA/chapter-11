@@ -1,4 +1,0 @@
-years ={"January":"31","Febuary":"28","March":"30","April":"30","May":"31","June":"30"}
-name= input("Enter Name of a month: ")
-sorted_year ={key:years[key] for key in sorted(years)}
-print(sorted_year.keys())
