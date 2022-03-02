@@ -1,0 +1,19 @@
+#Q1
+no = int(input("Enter the no of products : "))
+dict ={}
+for y in range(no):
+    product_name = input("Enter the name of product : ")
+    product_price = int(input("Enter the price product : "))
+    dict[product_name] = product_price
+
+
+while True:
+    product_name = input("Enter the name of product to get price : ")
+    if product_name in dict:
+        print("The price of product you select is : ", dict[product_name])
+
+    else:
+        print("The product you entered is not in the dictionary!!")
+
+
+print(dict)
