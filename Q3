@@ -1,0 +1,21 @@
+
+years ={"January":"31","Febuary":"28","March":"30","April":"30","May":"31","June":"30"}
+name= input("Enter Name of a month: ")
+
+#a
+for key, values in years.items():
+     if name == key:  
+        print( values)
+              
+#b
+sorted_year ={key:years[key] for key in sorted(years)}
+print(sorted_year.keys())        
+
+#c
+for keys,values in years.items():
+    if int(values) == 31:
+      print(keys)
+      
+#d
+month = dict(sorted(years.items(),key= operator.itemgetter(1)))
+print(month)

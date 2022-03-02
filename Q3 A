@@ -1,5 +1,0 @@
-years ={"January":"31","Febuary":"28","March":"30","April":"30","May":"31","June":"30"}
-name= input("Enter Name of a month: ")
-for key, values in years.items():
-     if name == key:  
-        print( values)
