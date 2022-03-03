@@ -1,0 +1,17 @@
+from random import choice
+
+cards = {"One":1,"Two":2,"Three":3,"Four":4,"Five":5,"Six":6,"Seven":7,"Eight":8,"Nine":9,"Ten":10}
+x = 3
+a = []
+b = []
+for i in range(c):
+    x1 = choice(list(cards.values()))
+    x2 = choice(list(cards.values()))
+    a.append(x1)
+    b.append(x2)
+print(a,b)
+
+if sum(a) > sum(b):
+    print("Player 1 wins with: ",sum(a),"\nAgainst Player 2 with:",sum(b))
+elif sum(b) > sum(a):
+    print("Player 2 wins with: ",sum(b),"Against Player 1 with:",sum(a))
